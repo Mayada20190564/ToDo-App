@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="layout">
+            <h2 class="text-center">Welcom at ToDo App</h2>
+        <div class="container-fluid col-md-6 mt-5">
+            <button class="btn-block addNewTask" id="btnAdd">Add Task From here</button>
+        </div>
+        <div class="container col-md-6 mt-5">
+            <div class="card">
+                <div class="card-body cardbg">
+                   <div class="alert noTasks">
+                       <h5 class="text-center">No data added yet</h5>
+                   </div>
+                   <div class="allTasks ">
+                       
+                   </div>
+                </div>
+            </div>
+            <div class="container container-fluid">
+                <div class="modal"  id="taskCard" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Add Task</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row content">
+                                    <div class="col-md-10">
+                                        <div class="task">
+                                            <h6 class="text-center">Add Task</h6>
+                                            <input id="taskInput" placeholder="Task" class="name btn-block mt-4 mb-4">
+                                            <div class="invalid alert alert-danger hide">
+                                                <p class="d-inline">Data is not valid</p>
+                                                <button class="float-right"><i class="far fa-times-circle"></i></button>
+                                            </div>
+                                            <button class="addNow btn-block mb-4">Add Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button id="close">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <!-- End Modal -->
+        </div>
+    </div>
+      
+    
+    
+
+
+
+
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
